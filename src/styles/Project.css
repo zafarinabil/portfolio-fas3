@@ -1,0 +1,135 @@
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  /* background: url("/public/images/blue.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; */
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.project {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* .project:hover {
+  background-color: #5b5b5b;
+} */
+
+.img-container {
+  width: 50%;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 20px;
+  border-radius: 5px white;
+}
+
+.project-text-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px;
+  background-color: #061446;
+
+  height: 350px;
+  border-radius: 10px;
+}
+
+.project-text-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--head-color);
+}
+
+.project-text-subtitle {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.app-button {
+  display: flex;
+  padding: 5px 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #1588e0;
+  color: #000000;
+  transition: 0.3s;
+  font-family: "Cormorant Garamond", serif;
+  border-radius: 50%;
+}
+
+.app-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.app-button:hover {
+  background-color: #0091ff;
+  color: #000000;
+  transform: scale(1.1); /* Optional: Add a subtle scale effect on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.my-projects h1 {
+  text-align: center;
+  font-size: 56px;
+  line-height: 0px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--head-color);
+  padding: 100px 0 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .project-card {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .project-text-container {
+    padding: 20px;
+  }
+
+  .project-text-subtitle {
+    font-size: 18px;
+  }
+}
+
